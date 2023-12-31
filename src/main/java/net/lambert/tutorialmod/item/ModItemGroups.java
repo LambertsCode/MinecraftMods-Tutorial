@@ -2,6 +2,7 @@ package net.lambert.tutorialmod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.lambert.tutorialmod.TutorialMod;
+import net.lambert.tutorialmod.block.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -20,6 +21,9 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_RUBY);
 
                         entries.add(Items.DIAMOND);
+
+                        entries.add(ModBlocks.RUBY_BLOCK);
+                        entries.add(ModBlocks.RAW_RUBY_BLOCK);
 
                     }).build());
     public static void registerItemGroups(){
