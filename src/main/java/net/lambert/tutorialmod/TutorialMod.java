@@ -2,6 +2,7 @@ package net.lambert.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.lambert.tutorialmod.block.ModBlocks;
 import net.lambert.tutorialmod.item.ModItemGroups;
 import net.lambert.tutorialmod.item.ModItems;
@@ -19,5 +20,7 @@ public class TutorialMod implements ModInitializer {
 		ModItems.registerModItems();
 
 		ModBlocks.registerModBlocks();
+
+		FuelRegistry.INSTANCE.add(ModItems.COAL_BRIQUETTE, 200);
 	}
 }
