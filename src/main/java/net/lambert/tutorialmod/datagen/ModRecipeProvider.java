@@ -2,9 +2,11 @@ package net.lambert.tutorialmod.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.lambert.tutorialmod.TutorialMod;
 import net.lambert.tutorialmod.block.ModBlocks;
 import net.lambert.tutorialmod.item.ModItems;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
+import net.minecraft.data.server.recipe.RecipeProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
@@ -43,25 +45,25 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.RAW_RUBY)));
 
-//        createStairsRecipe(ModBlocks.RUBY_STAIRS, Ingredient.ofItems(ModItems.RUBY))
-//                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
-//                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_STAIRS)));
-//        createDoorRecipe(ModBlocks.RUBY_DOOR, Ingredient.ofItems(ModItems.RUBY))
-//                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
-//                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_DOOR)));;
-//        createTrapdoorRecipe(ModBlocks.RUBY_TRAP_DOOR, Ingredient.ofItems(ModItems.RUBY))
-//                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
-//                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_TRAP_DOOR)));;
-//        createFenceRecipe(ModBlocks.RUBY_FENCE, Ingredient.ofItems(ModItems.RUBY))
-//                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
-//                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_FENCE)));;
-//        createFenceGateRecipe(ModBlocks.RUBY_FENCE_GATE, Ingredient.ofItems(ModItems.RUBY))
-//                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
-//                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_FENCE_GATE)));
-//
-//        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RUBY, ModBlocks.RUBY_SLAB);
-//        offerPressurePlateRecipe(exporter, ModBlocks.RUBY_SLAB, ModItems.RUBY);
-//        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUBY_WALL, ModItems.RUBY);
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUBY_SLAB, ModItems.RUBY);
+        offerPressurePlateRecipe(exporter, ModBlocks.RUBY_PRESSURE_PLATE, ModItems.RUBY);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUBY_WALL, ModItems.RUBY);
+
+        createStairsRecipe(ModBlocks.RUBY_STAIRS, Ingredient.ofItems(ModItems.RUBY))
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(TutorialMod.MOD_ID, "ruby_stairs"));
+        createDoorRecipe(ModBlocks.RUBY_DOOR, Ingredient.ofItems(ModItems.RUBY))
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(TutorialMod.MOD_ID, "ruby_door"));;
+        createTrapdoorRecipe(ModBlocks.RUBY_TRAPDOOR, Ingredient.ofItems(ModItems.RUBY))
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(TutorialMod.MOD_ID, "ruby_trapdoor"));;
+        createFenceRecipe(ModBlocks.RUBY_FENCE, Ingredient.ofItems(ModItems.RUBY))
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(TutorialMod.MOD_ID, "ruby_fence"));;
+        createFenceGateRecipe(ModBlocks.RUBY_FENCE_GATE, Ingredient.ofItems(ModItems.RUBY))
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(TutorialMod.MOD_ID, "ruby_fence_gate"));
 
     }
 }
