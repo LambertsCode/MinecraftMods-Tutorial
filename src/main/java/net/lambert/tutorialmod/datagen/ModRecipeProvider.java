@@ -8,6 +8,7 @@ import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 
@@ -41,5 +42,26 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.STONE), conditionsFromItem(Items.STONE))
                 .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.RAW_RUBY)));
+
+//        createStairsRecipe(ModBlocks.RUBY_STAIRS, Ingredient.ofItems(ModItems.RUBY))
+//                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+//                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_STAIRS)));
+//        createDoorRecipe(ModBlocks.RUBY_DOOR, Ingredient.ofItems(ModItems.RUBY))
+//                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+//                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_DOOR)));;
+//        createTrapdoorRecipe(ModBlocks.RUBY_TRAP_DOOR, Ingredient.ofItems(ModItems.RUBY))
+//                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+//                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_TRAP_DOOR)));;
+//        createFenceRecipe(ModBlocks.RUBY_FENCE, Ingredient.ofItems(ModItems.RUBY))
+//                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+//                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_FENCE)));;
+//        createFenceGateRecipe(ModBlocks.RUBY_FENCE_GATE, Ingredient.ofItems(ModItems.RUBY))
+//                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+//                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_FENCE_GATE)));
+//
+//        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RUBY, ModBlocks.RUBY_SLAB);
+//        offerPressurePlateRecipe(exporter, ModBlocks.RUBY_SLAB, ModItems.RUBY);
+//        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUBY_WALL, ModItems.RUBY);
+
     }
 }
