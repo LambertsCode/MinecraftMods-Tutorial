@@ -20,6 +20,9 @@ public class ModItemGroups {
                         entries.add(ModItems.RUBY);
                         entries.add(ModItems.RAW_RUBY);
 
+                        entries.add(ModItems.OPAL);
+                        entries.add(ModItems.RAW_OPAL);
+
                         entries.add(ModItems.METAL_DETECTOR);
 
                         entries.add(ModItems.TOMATO);
@@ -31,12 +34,20 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RUBY_BLOCK);
                         entries.add(ModBlocks.RAW_RUBY_BLOCK);
 
+                        entries.add(ModBlocks.OPAL_BLOCK);
+                        entries.add(ModBlocks.RAW_OPAL_BLOCK);
+
                         entries.add(ModBlocks.SOUND_BLOCK);
 
                         entries.add(ModBlocks.RUBY_ORE);
                         entries.add(ModBlocks.DEEPSLATE_RUBY_ORE);
                         entries.add(ModBlocks.NETHER_RUBY_ORE);
                         entries.add(ModBlocks.END_STONE_RUBY_ORE);
+
+                        entries.add(ModBlocks.OPAL_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_OPAL_ORE);
+                        entries.add(ModBlocks.NETHER_OPAL_ORE);
+                        entries.add(ModBlocks.END_STONE_OPAL_ORE);
 
                         entries.add(ModBlocks.RUBY_STAIRS);
                         entries.add(ModBlocks.RUBY_SLAB);

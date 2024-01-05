@@ -25,6 +25,11 @@ public class ModBlocks {
     public static final Block RAW_RUBY_BLOCK = registerBlock("raw_ruby_block",
             new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
+    public static final Block OPAL_BLOCK = registerBlock("opal_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK))); //can use .create to create own settings
+    public static final Block RAW_OPAL_BLOCK = registerBlock("raw_opal_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+
     public static final Block SOUND_BLOCK = registerBlock("sound_block",
             new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
 
@@ -57,6 +62,15 @@ public class ModBlocks {
     public static final Block NETHER_RUBY_ORE = registerBlock("nether_ruby_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.NETHERRACK).strength(1.5f), UniformIntProvider.create(2, 5)));
     public static final Block END_STONE_RUBY_ORE = registerBlock("end_stone_ruby_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(4f), UniformIntProvider.create(4, 8)));
+
+    public static final Block OPAL_ORE = registerBlock("opal_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f), UniformIntProvider.create(2, 5)));
+    public static final Block DEEPSLATE_OPAL_ORE = registerBlock("deepslate_opal_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f), UniformIntProvider.create(2, 5)));
+    public static final Block NETHER_OPAL_ORE = registerBlock("nether_opal_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.NETHERRACK).strength(1.5f), UniformIntProvider.create(2, 5)));
+    public static final Block END_STONE_OPAL_ORE = registerBlock("end_stone_opal_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(4f), UniformIntProvider.create(4, 8)));
 
     private static Block registerBlock(String name, Block block){

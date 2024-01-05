@@ -22,6 +22,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_RUBY_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_RUBY_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_STONE_RUBY_ORE);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOUND_BLOCK);
 
         rubyPool.stairs(ModBlocks.RUBY_STAIRS);
@@ -35,6 +36,12 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.RUBY_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.RUBY_TRAPDOOR);
 
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.OPAL_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_OPAL_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.OPAL_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_OPAL_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_OPAL_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_STONE_OPAL_ORE);
 
 
     }
@@ -43,6 +50,9 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.RUBY, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_RUBY, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.OPAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_OPAL, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.COAL_BRIQUETTE, Models.GENERATED);
         itemModelGenerator.register(ModItems.TOMATO, Models.GENERATED);

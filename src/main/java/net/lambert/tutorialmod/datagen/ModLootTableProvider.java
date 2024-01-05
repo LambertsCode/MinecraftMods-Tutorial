@@ -27,12 +27,21 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.RUBY_BLOCK);
         addDrop(ModBlocks.RAW_RUBY_BLOCK);
+
+        addDrop(ModBlocks.OPAL_BLOCK);
+        addDrop(ModBlocks.RAW_OPAL_BLOCK);
+
         addDrop(ModBlocks.SOUND_BLOCK);
 
         addDrop(ModBlocks.RUBY_ORE, copperLikeOreDrops(ModBlocks.RUBY_ORE, ModItems.RAW_RUBY));
         addDrop(ModBlocks.DEEPSLATE_RUBY_ORE, copperLikeOreDrops(ModBlocks.DEEPSLATE_RUBY_ORE, ModItems.RAW_RUBY));
         addDrop(ModBlocks.NETHER_RUBY_ORE, copperLikeOreDrops(ModBlocks.NETHER_RUBY_ORE, ModItems.RAW_RUBY));
         addDrop(ModBlocks.END_STONE_RUBY_ORE, copperLikeOreDrops(ModBlocks.END_STONE_RUBY_ORE, ModItems.RAW_RUBY));
+
+        addDrop(ModBlocks.OPAL_ORE, copperLikeOreDrops(ModBlocks.OPAL_ORE, ModItems.RAW_OPAL));
+        addDrop(ModBlocks.DEEPSLATE_OPAL_ORE, copperLikeOreDrops(ModBlocks.DEEPSLATE_OPAL_ORE, ModItems.RAW_OPAL));
+        addDrop(ModBlocks.NETHER_OPAL_ORE, copperLikeOreDrops(ModBlocks.NETHER_OPAL_ORE, ModItems.RAW_OPAL));
+        addDrop(ModBlocks.END_STONE_OPAL_ORE, copperLikeOreDrops(ModBlocks.END_STONE_OPAL_ORE, ModItems.RAW_OPAL));
 
         addDrop(ModBlocks.RUBY_STAIRS);
         addDrop(ModBlocks.RUBY_BUTTON);
