@@ -25,24 +25,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
+
+        /*RUBY*/
         addDrop(ModBlocks.RUBY_BLOCK);
         addDrop(ModBlocks.RAW_RUBY_BLOCK);
-
-        addDrop(ModBlocks.OPAL_BLOCK);
-        addDrop(ModBlocks.RAW_OPAL_BLOCK);
-        addDrop(ModBlocks.OPAL_BLOCK_EXTRA);
-
-        addDrop(ModBlocks.SOUND_BLOCK);
 
         addDrop(ModBlocks.RUBY_ORE, copperLikeOreDrops(ModBlocks.RUBY_ORE, ModItems.RAW_RUBY));
         addDrop(ModBlocks.DEEPSLATE_RUBY_ORE, copperLikeOreDrops(ModBlocks.DEEPSLATE_RUBY_ORE, ModItems.RAW_RUBY));
         addDrop(ModBlocks.NETHER_RUBY_ORE, copperLikeOreDrops(ModBlocks.NETHER_RUBY_ORE, ModItems.RAW_RUBY));
         addDrop(ModBlocks.END_STONE_RUBY_ORE, copperLikeOreDrops(ModBlocks.END_STONE_RUBY_ORE, ModItems.RAW_RUBY));
-
-        addDrop(ModBlocks.OPAL_ORE, copperLikeOreDrops(ModBlocks.OPAL_ORE, ModItems.RAW_OPAL));
-        addDrop(ModBlocks.DEEPSLATE_OPAL_ORE, copperLikeOreDrops(ModBlocks.DEEPSLATE_OPAL_ORE, ModItems.RAW_OPAL));
-        addDrop(ModBlocks.NETHER_OPAL_ORE, copperLikeOreDrops(ModBlocks.NETHER_OPAL_ORE, ModItems.RAW_OPAL));
-        addDrop(ModBlocks.END_STONE_OPAL_ORE, copperLikeOreDrops(ModBlocks.END_STONE_OPAL_ORE, ModItems.RAW_OPAL));
 
         addDrop(ModBlocks.RUBY_STAIRS);
         addDrop(ModBlocks.RUBY_BUTTON);
@@ -55,6 +46,16 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.RUBY_DOOR, doorDrops(ModBlocks.RUBY_DOOR));
         addDrop(ModBlocks.RUBY_SLAB, slabDrops(ModBlocks.RUBY_SLAB));
 
+        /*OPAL*/
+        addDrop(ModBlocks.OPAL_BLOCK);
+        addDrop(ModBlocks.RAW_OPAL_BLOCK);
+        addDrop(ModBlocks.OPAL_BLOCK_EXTRA);
+
+        addDrop(ModBlocks.OPAL_ORE, copperLikeOreDrops(ModBlocks.OPAL_ORE, ModItems.RAW_OPAL));
+        addDrop(ModBlocks.DEEPSLATE_OPAL_ORE, copperLikeOreDrops(ModBlocks.DEEPSLATE_OPAL_ORE, ModItems.RAW_OPAL));
+        addDrop(ModBlocks.NETHER_OPAL_ORE, copperLikeOreDrops(ModBlocks.NETHER_OPAL_ORE, ModItems.RAW_OPAL));
+        addDrop(ModBlocks.END_STONE_OPAL_ORE, copperLikeOreDrops(ModBlocks.END_STONE_OPAL_ORE, ModItems.RAW_OPAL));
+
         addDrop(ModBlocks.OPAL_STAIRS);
         addDrop(ModBlocks.OPAL_BUTTON);
         addDrop(ModBlocks.OPAL_PRESSURE_PLATE);
@@ -65,6 +66,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.OPAL_DOOR, doorDrops(ModBlocks.OPAL_DOOR));
         addDrop(ModBlocks.OPAL_SLAB, slabDrops(ModBlocks.OPAL_SLAB));
+
+        /*MISC*/
+        addDrop(ModBlocks.SOUND_BLOCK);
     }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {

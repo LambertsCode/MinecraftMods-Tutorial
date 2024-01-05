@@ -1,6 +1,10 @@
 {
   "item.tutorialmod.ruby": "Ruby",
   "item.tutorialmod.raw_ruby": "Raw Ruby",
+
+  "item.tutorialmod.opal": "Opal",
+  "item.tutorialmod.raw_opal": "Raw Opal",
+
   "item.tutorialmod.metal_detector": "Metal Detector",
   "item.tutorialmod.tomato": "Tomato",
   "item.tutorialmod.coal_briquette": "Coal Briquette",

@@ -20,20 +20,13 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
 
+    /*---------------------------------------RUBY-----------------------------------------------*/
+
     public static final Block RUBY_BLOCK = registerBlock("ruby_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK))); //can use .create to create own settings
     public static final Block RAW_RUBY_BLOCK = registerBlock("raw_ruby_block",
             new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
-
-    public static final Block OPAL_BLOCK = registerBlock("opal_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK))); //can use .create to create own settings
-    public static final Block RAW_OPAL_BLOCK = registerBlock("raw_opal_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
-    public static final Block OPAL_BLOCK_EXTRA = registerBlock("opal_block_extra",
-            new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
-
-    public static final Block SOUND_BLOCK = registerBlock("sound_block",
-            new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+;
 
     public static final Block RUBY_STAIRS = registerBlock("ruby_stairs",
             new StairsBlock(ModBlocks.RUBY_BLOCK.getDefaultState(), FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
@@ -66,6 +59,15 @@ public class ModBlocks {
     public static final Block END_STONE_RUBY_ORE = registerBlock("end_stone_ruby_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(4f), UniformIntProvider.create(4, 8)));
 
+/*---------------------------------------OPAL-----------------------------------------------*/
+
+    public static final Block OPAL_BLOCK = registerBlock("opal_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK))); //can use .create to create own settings
+    public static final Block RAW_OPAL_BLOCK = registerBlock("raw_opal_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block OPAL_BLOCK_EXTRA = registerBlock("opal_block_extra",
+            new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+
     public static final Block OPAL_ORE = registerBlock("opal_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f), UniformIntProvider.create(2, 5)));
     public static final Block DEEPSLATE_OPAL_ORE = registerBlock("deepslate_opal_ore",
@@ -96,6 +98,13 @@ public class ModBlocks {
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_DOOR), BlockSetType.IRON));
     public static final Block OPAL_TRAPDOOR = registerBlock("opal_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_TRAPDOOR), BlockSetType.IRON));
+
+    /*---------------------------------------MISC-----------------------------------------------*/
+
+    public static final Block SOUND_BLOCK = registerBlock("sound_block",
+            new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+
+    /*---------------------------------------METHODS-----------------------------------------------*/
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);

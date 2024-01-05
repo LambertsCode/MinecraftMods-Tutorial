@@ -30,31 +30,40 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .forceAddTag(BlockTags.COAL_ORES);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+
+                /*RUBY*/
                 .add(ModBlocks.RAW_RUBY_BLOCK)
                 .add(ModBlocks.RUBY_BLOCK)
                 .add(ModBlocks.RUBY_ORE)
                 .add(ModBlocks.DEEPSLATE_RUBY_ORE)
                 .add(ModBlocks.NETHER_RUBY_ORE)
                 .add(ModBlocks.END_STONE_RUBY_ORE)
-                .add(ModBlocks.SOUND_BLOCK)
 
+                /*OPAL*/
                 .add(ModBlocks.OPAL_BLOCK)
                 .add(ModBlocks.RAW_OPAL_BLOCK)
                 .add(ModBlocks.OPAL_BLOCK_EXTRA)
                 .add(ModBlocks.OPAL_ORE)
                 .add(ModBlocks.DEEPSLATE_OPAL_ORE)
                 .add(ModBlocks.NETHER_OPAL_ORE)
-                .add(ModBlocks.END_STONE_OPAL_ORE);
+                .add(ModBlocks.END_STONE_OPAL_ORE)
+
+                /*MISC*/
+                .add(ModBlocks.SOUND_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.RUBY_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+
+                /*RUBY*/
                 .add(ModBlocks.RAW_RUBY_BLOCK)
-                .add(ModBlocks.OPAL_BLOCK_EXTRA)
                 .add(ModBlocks.RUBY_ORE)
+
+                /*OPAL*/
                 .add(ModBlocks.OPAL_BLOCK)
                 .add(ModBlocks.RAW_OPAL_BLOCK)
+                .add(ModBlocks.OPAL_BLOCK_EXTRA)
                 .add(ModBlocks.OPAL_ORE)
                 .add(ModBlocks.DEEPSLATE_OPAL_ORE)
                 .add(ModBlocks.NETHER_OPAL_ORE)
@@ -66,6 +75,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")))
                 .add(ModBlocks.END_STONE_RUBY_ORE);
 
+        /*RUBY*/
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(ModBlocks.RUBY_FENCE);
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
@@ -73,6 +83,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.RUBY_WALL);
 
+        /*OPAL*/
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(ModBlocks.OPAL_FENCE);
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
