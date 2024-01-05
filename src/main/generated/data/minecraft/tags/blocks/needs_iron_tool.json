@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "tutorialmod:raw_ruby_block",
+    "tutorialmod:opal_block_extra",
     "tutorialmod:ruby_ore",
     "tutorialmod:opal_block",
     "tutorialmod:raw_opal_block",

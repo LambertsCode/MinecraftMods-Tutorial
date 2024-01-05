@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "tutorialmod:ruby_wall"
+    "tutorialmod:ruby_wall",
+    "tutorialmod:opal_wall"
   ]
 }

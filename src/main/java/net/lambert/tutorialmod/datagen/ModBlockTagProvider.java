@@ -40,6 +40,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
                 .add(ModBlocks.OPAL_BLOCK)
                 .add(ModBlocks.RAW_OPAL_BLOCK)
+                .add(ModBlocks.OPAL_BLOCK_EXTRA)
                 .add(ModBlocks.OPAL_ORE)
                 .add(ModBlocks.DEEPSLATE_OPAL_ORE)
                 .add(ModBlocks.NETHER_OPAL_ORE)
@@ -50,6 +51,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.RAW_RUBY_BLOCK)
+                .add(ModBlocks.OPAL_BLOCK_EXTRA)
                 .add(ModBlocks.RUBY_ORE)
                 .add(ModBlocks.OPAL_BLOCK)
                 .add(ModBlocks.RAW_OPAL_BLOCK)
@@ -70,6 +72,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RUBY_FENCE_GATE);
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.RUBY_WALL);
+
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.OPAL_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.OPAL_FENCE_GATE);
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.OPAL_WALL);
 
     }
 }

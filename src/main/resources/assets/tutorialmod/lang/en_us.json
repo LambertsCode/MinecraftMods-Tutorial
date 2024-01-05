@@ -10,6 +10,7 @@
 
   "block.tutorialmod.opal_block": "Block of Opal",
   "block.tutorialmod.raw_opal_block": "Block of Raw Opal",
+  "block.tutorialmod.opal_block_extra": "Block of Raw Opal Extra",
 
   "block.tutorialmod.ruby_ore": "Ruby Ore",
   "block.tutorialmod.deepslate_ruby_ore": "Deepslate Ruby Ore",
@@ -32,6 +33,16 @@
   "block.tutorialmod.ruby_wall": "Ruby Wall",
   "block.tutorialmod.ruby_door": "Ruby Door",
   "block.tutorialmod.ruby_trapdoor": "Ruby Trapdoor",
+
+  "block.tutorialmod.opal_stairs": "Opal Stairs",
+  "block.tutorialmod.opal_slab": "Opal Slab",
+  "block.tutorialmod.opal_button": "Opal Button",
+  "block.tutorialmod.opal_pressure_plate": "Opal Pressure Plate",
+  "block.tutorialmod.opal_fence": "Opal Fence",
+  "block.tutorialmod.opal_fence_gate": "Opal Fence Gate",
+  "block.tutorialmod.opal_wall": "Opal Wall",
+  "block.tutorialmod.opal_door": "Opal Door",
+  "block.tutorialmod.opal_trapdoor": "Opal Trapdoor",
 
   "tooltip.tutorialmod.metal_detector.tooltip": "Finds valuables underground.",
 

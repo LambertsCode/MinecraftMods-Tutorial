@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "tutorialmod:opal"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "tutorialmod:opal_pressure_plate"
+  },
+  "show_notification": true
+}

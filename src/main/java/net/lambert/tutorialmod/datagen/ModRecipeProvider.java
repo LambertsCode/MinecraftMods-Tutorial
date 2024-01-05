@@ -86,5 +86,25 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
                 .offerTo(exporter, new Identifier(TutorialMod.MOD_ID, "ruby_fence_gate"));
 
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.OPAL_SLAB, ModItems.OPAL);
+        offerPressurePlateRecipe(exporter, ModBlocks.OPAL_PRESSURE_PLATE, ModItems.OPAL);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.OPAL_WALL, ModItems.OPAL);
+
+        createStairsRecipe(ModBlocks.OPAL_STAIRS, Ingredient.ofItems(ModItems.OPAL))
+                .criterion(hasItem(ModItems.OPAL), conditionsFromItem(ModItems.OPAL))
+                .offerTo(exporter, new Identifier(TutorialMod.MOD_ID, "opal_stairs"));
+        createDoorRecipe(ModBlocks.OPAL_DOOR, Ingredient.ofItems(ModItems.OPAL))
+                .criterion(hasItem(ModItems.OPAL), conditionsFromItem(ModItems.OPAL))
+                .offerTo(exporter, new Identifier(TutorialMod.MOD_ID, "opal_door"));;
+        createTrapdoorRecipe(ModBlocks.OPAL_TRAPDOOR, Ingredient.ofItems(ModItems.OPAL))
+                .criterion(hasItem(ModItems.OPAL), conditionsFromItem(ModItems.OPAL))
+                .offerTo(exporter, new Identifier(TutorialMod.MOD_ID, "opal_trapdoor"));;
+        createFenceRecipe(ModBlocks.OPAL_FENCE, Ingredient.ofItems(ModItems.OPAL))
+                .criterion(hasItem(ModItems.OPAL), conditionsFromItem(ModItems.OPAL))
+                .offerTo(exporter, new Identifier(TutorialMod.MOD_ID, "opal_fence"));;
+        createFenceGateRecipe(ModBlocks.OPAL_FENCE_GATE, Ingredient.ofItems(ModItems.OPAL))
+                .criterion(hasItem(ModItems.OPAL), conditionsFromItem(ModItems.OPAL))
+                .offerTo(exporter, new Identifier(TutorialMod.MOD_ID, "opal_fence_gate"));
+
     }
 }

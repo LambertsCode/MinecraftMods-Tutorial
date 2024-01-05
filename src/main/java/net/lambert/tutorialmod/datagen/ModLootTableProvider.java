@@ -30,6 +30,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.OPAL_BLOCK);
         addDrop(ModBlocks.RAW_OPAL_BLOCK);
+        addDrop(ModBlocks.OPAL_BLOCK_EXTRA);
 
         addDrop(ModBlocks.SOUND_BLOCK);
 
@@ -53,6 +54,17 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.RUBY_DOOR, doorDrops(ModBlocks.RUBY_DOOR));
         addDrop(ModBlocks.RUBY_SLAB, slabDrops(ModBlocks.RUBY_SLAB));
+
+        addDrop(ModBlocks.OPAL_STAIRS);
+        addDrop(ModBlocks.OPAL_BUTTON);
+        addDrop(ModBlocks.OPAL_PRESSURE_PLATE);
+        addDrop(ModBlocks.OPAL_TRAPDOOR);
+        addDrop(ModBlocks.OPAL_FENCE);
+        addDrop(ModBlocks.OPAL_FENCE_GATE);
+        addDrop(ModBlocks.OPAL_WALL);
+
+        addDrop(ModBlocks.OPAL_DOOR, doorDrops(ModBlocks.OPAL_DOOR));
+        addDrop(ModBlocks.OPAL_SLAB, slabDrops(ModBlocks.OPAL_SLAB));
     }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {

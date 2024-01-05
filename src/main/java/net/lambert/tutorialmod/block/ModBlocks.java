@@ -29,6 +29,8 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK))); //can use .create to create own settings
     public static final Block RAW_OPAL_BLOCK = registerBlock("raw_opal_block",
             new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block OPAL_BLOCK_EXTRA = registerBlock("opal_block_extra",
+            new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
     public static final Block SOUND_BLOCK = registerBlock("sound_block",
             new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
@@ -72,6 +74,28 @@ public class ModBlocks {
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.NETHERRACK).strength(1.5f), UniformIntProvider.create(2, 5)));
     public static final Block END_STONE_OPAL_ORE = registerBlock("end_stone_opal_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(4f), UniformIntProvider.create(4, 8)));
+
+    public static final Block OPAL_STAIRS = registerBlock("opal_stairs",
+            new StairsBlock(ModBlocks.OPAL_BLOCK.getDefaultState(), FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+    public static final Block OPAL_SLAB = registerBlock("opal_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+
+    public static final Block OPAL_BUTTON = registerBlock("opal_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK), BlockSetType.IRON, 10, true));
+    public static final Block OPAL_PRESSURE_PLATE = registerBlock("opal_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.IRON_BLOCK), BlockSetType.IRON));
+
+    public static final Block OPAL_FENCE = registerBlock("opal_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+    public static final Block OPAL_FENCE_GATE = registerBlock("opal_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK), WoodType.ACACIA));
+    public static final Block OPAL_WALL= registerBlock("opal_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+
+    public static final Block OPAL_DOOR = registerBlock("opal_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_DOOR), BlockSetType.IRON));
+    public static final Block OPAL_TRAPDOOR = registerBlock("opal_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_TRAPDOOR), BlockSetType.IRON));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);

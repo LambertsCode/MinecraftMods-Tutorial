@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "tutorialmod:ruby_fence_gate"
+    "tutorialmod:ruby_fence_gate",
+    "tutorialmod:opal_fence_gate"
   ]
 }

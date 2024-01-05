@@ -36,6 +36,7 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.OPAL_BLOCK);
                         entries.add(ModBlocks.RAW_OPAL_BLOCK);
+                        entries.add(ModBlocks.OPAL_BLOCK_EXTRA);
 
                         entries.add(ModBlocks.SOUND_BLOCK);
 
@@ -58,6 +59,16 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RUBY_WALL);
                         entries.add(ModBlocks.RUBY_DOOR);
                         entries.add(ModBlocks.RUBY_TRAPDOOR);
+
+                        entries.add(ModBlocks.OPAL_STAIRS);
+                        entries.add(ModBlocks.OPAL_SLAB);
+                        entries.add(ModBlocks.OPAL_BUTTON);
+                        entries.add(ModBlocks.OPAL_PRESSURE_PLATE);
+                        entries.add(ModBlocks.OPAL_FENCE);
+                        entries.add(ModBlocks.OPAL_FENCE_GATE);
+                        entries.add(ModBlocks.OPAL_WALL);
+                        entries.add(ModBlocks.OPAL_DOOR);
+                        entries.add(ModBlocks.OPAL_TRAPDOOR);
 
 
                     }).build());

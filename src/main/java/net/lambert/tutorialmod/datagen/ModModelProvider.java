@@ -16,6 +16,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         BlockStateModelGenerator.BlockTexturePool rubyPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RUBY_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool opalPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.OPAL_BLOCK_EXTRA);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_RUBY_BLOCK);
@@ -42,6 +43,17 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_OPAL_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_OPAL_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_STONE_OPAL_ORE);
+
+        opalPool.stairs(ModBlocks.OPAL_STAIRS);
+        opalPool.slab(ModBlocks.OPAL_SLAB);
+        opalPool.button(ModBlocks.OPAL_BUTTON);
+        opalPool.pressurePlate(ModBlocks.OPAL_PRESSURE_PLATE);
+        opalPool.fence(ModBlocks.OPAL_FENCE);
+        opalPool.fenceGate(ModBlocks.OPAL_FENCE_GATE);
+        opalPool.wall(ModBlocks.OPAL_WALL);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.OPAL_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.OPAL_TRAPDOOR);
 
 
     }
