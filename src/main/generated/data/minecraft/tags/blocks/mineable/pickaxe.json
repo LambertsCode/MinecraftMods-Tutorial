@@ -7,13 +7,13 @@
     "tutorialmod:deepslate_ruby_ore",
     "tutorialmod:nether_ruby_ore",
     "tutorialmod:end_stone_ruby_ore",
-    "tutorialmod:sound_block",
     "tutorialmod:opal_block",
     "tutorialmod:raw_opal_block",
     "tutorialmod:opal_block_extra",
     "tutorialmod:opal_ore",
     "tutorialmod:deepslate_opal_ore",
     "tutorialmod:nether_opal_ore",
-    "tutorialmod:end_stone_opal_ore"
+    "tutorialmod:end_stone_opal_ore",
+    "tutorialmod:sound_block"
   ]
 }
